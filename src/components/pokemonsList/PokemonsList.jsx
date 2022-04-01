@@ -38,7 +38,13 @@ const PokemonList = () => {
 
     if(loader === true) {
         return (
-            <p>Cargando...</p>
+            <>
+            <h2 style={{color: '#3761a8'}}>Loading...</h2>
+            <img 
+            height={150}
+            src="https://courses.cs.washington.edu/courses/cse154/17sp/project/pokedex-2/resources/starter/resources/icons/loading-pikachu.gif" 
+            alt="loading"
+            /></>
         )
     }
 
