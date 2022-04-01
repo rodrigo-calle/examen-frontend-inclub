@@ -1,0 +1,53 @@
+@import '../../_colors';
+
+.pokemon-card {
+    border: 2px solid $yellowColor;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    border-radius: 14px;
+    height: 340px;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid $mainColor;
+        transition-duration: 0.3s;
+    }
+
+    .pokemon-name {
+        font-weight: 600;
+        margin: 0;
+        font-size: 18px;
+        color: $mainColor;
+    }
+    .pokemon-height, .pokemon-weight, .pokemon-type {
+        font-size: 14px;
+        margin: 0;
+        span {
+            font-weight: 600;
+            margin: 0;
+        }
+        .span-type {
+            background-color:#feca1b ;
+            padding: 1px;
+            border-radius: 7px;
+        }
+    }
+    .detail-btn {
+        width: fit-content;
+        margin: 5px auto;
+        background-color: $mainColor;
+        color: $yellowColor;
+        border-radius: 7px;
+        border: 1px solid $mainColor;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-weight: 500;
+        &:hover {
+            background-color: $yellowColor;
+            color: $mainColor;
+            transition-duration: 0.3s;
+        }
+    }
+}

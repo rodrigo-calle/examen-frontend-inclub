@@ -1,0 +1,87 @@
+@import '../../_colors';
+
+.pokemon-detail-container {
+    h1 {
+        color: $mainColor;
+        text-shadow: 2px 0 0 $yellowColor, -2px 0 0 $yellowColor, 0 2px 0 $yellowColor, 0 -2px 0 $yellowColor, 1px 1px $yellowColor, -1px -1px 0 $yellowColor, 1px -1px 0 $yellowColor, -1px 1px 0 $yellowColor;
+    }
+    .back-link {
+        color: $mainColor;
+
+        &:hover {
+            color: $yellowColor;
+            transition-duration: 0.3s;
+        }
+    }
+
+    .pokedex {
+        width: 400px;
+        height: 375px;
+        background-color: #dd082f;
+        margin: 10px auto;
+        border-radius: 14px 0px 0px 14px;
+        padding-top: 25px;
+
+        .pokedex-screen {
+            background-color: #fff;
+            width: 300px;
+            height: 250px;
+            margin: 0px auto;
+            border-radius: 14px 0px 0px 14px;
+            .pokemon-name {
+                margin: 0;
+                font-weight: 600;
+                font-size: 20px;
+                padding-top: 18px;
+                text-shadow: 2px 0 0 $mainColor, -2px 0 0 $mainColor, 0 2px 0 $mainColor, 0 -2px 0 $mainColor, 1px 1px $mainColor, -1px -1px 0 $mainColor, 1px -1px 0 $mainColor, -1px 1px 0 $mainColor;
+                color: $yellowColor;
+            }
+            .pokemon-information {
+                display: flex;
+                flex-direction: row;
+                margin: 15px auto;
+                justify-content: space-around;
+                width: 90%;
+                text-align: left;
+                p {
+                    span {
+                        font-weight: 600;
+                        margin: 0;
+                        color: $mainColor;
+                    }
+                    .span-type {
+                        color: #feca1b;
+                        padding: 1px;
+                        border-radius: 7px;
+                    }
+                }
+            }
+        }
+        .btns {
+            width: 300px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            .play-btn{
+                height: 40px;
+                width: 40px;
+                background-color: $mainColor;
+                border-radius: 50%;
+            }
+            .green-bnt {
+                height: 20px;
+                width: 40px;
+                background-color: $yellowColor;
+                border-radius: 14px;
+            }
+            .blue-bnt {
+                height: 20px;
+                width: 40px;
+                background-color: $mainColor;
+                border-radius: 14px;
+            }
+        }
+    }
+}

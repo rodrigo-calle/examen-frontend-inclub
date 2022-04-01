@@ -1,0 +1,31 @@
+@import '../../_colors';
+
+.container-add-pokemon {
+    width: 400px;
+    height: fit-content;
+    margin: 20px auto;
+    .form-container {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 20px;
+        .form-container__form {
+            width: 100%;
+            height: fit-content;
+            input, textarea {
+                width: 90%;
+                padding: 5px ;
+                border: 1px solid #ccc;
+                border-radius: 14px;
+                margin: 5px auto;
+
+            }
+            .submit-register {
+                cursor: pointer;
+                background-color: $mainColor;
+                color: $yellowColor;
+                border: 2px solid $yellowColor;
+            }
+        }
+
+    }
+}
